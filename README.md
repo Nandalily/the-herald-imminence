@@ -170,3 +170,139 @@ Mr. Clause's website
 5. **Scenario Explorer:** "What if" interactive tools for major trends
 
 This comprehensive plan creates a sophisticated, dynamic platform that establishes The Herald Imminence as a credible, engaging source for future-focused insights while building a community of informed users through interactive features and personalized experiences.
+
+
+
+the-herald-imminence/
+│
+├── frontend/                    # Client-side application
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── favicon.ico
+│   │   └── manifest.json
+│   │
+│   ├── src/
+│   │   ├── assets/             # Static assets
+│   │   │   ├── images/
+│   │   │   ├── icons/
+│   │   │   └── styles/
+│   │   │
+│   │   ├── components/         # Reusable UI components
+│   │   │   ├── common/
+│   │   │   │   ├── Header.jsx
+│   │   │   │   ├── Footer.jsx
+│   │   │   │   ├── Navbar.jsx
+│   │   │   │   └── SearchBar.jsx
+│   │   │   │
+│   │   │   ├── home/
+│   │   │   │   ├── HeroSection.jsx
+│   │   │   │   ├── FeaturedTopics.jsx
+│   │   │   │   └── LatestInsights.jsx
+│   │   │   │
+│   │   │   ├── auth/
+│   │   │   │   ├── LoginForm.jsx
+│   │   │   │   ├── RegisterForm.jsx
+│   │   │   │   └── ProfileCard.jsx
+│   │   │   │
+│   │   │   └── dashboard/
+│   │   │       ├── UserDashboard.jsx
+│   │   │       ├── SavedArticles.jsx
+│   │   │       └── Preferences.jsx
+│   │   │
+│   │   ├── pages/              # Main page components
+│   │   │   ├── HomePage.jsx
+│   │   │   ├── TopicsPage.jsx
+│   │   │   ├── ArticlePage.jsx
+│   │   │   ├── AboutPage.jsx
+│   │   │   ├── ContactPage.jsx
+│   │   │   └── DashboardPage.jsx
+│   │   │
+│   │   ├── contexts/           # React contexts
+│   │   │   ├── AuthContext.jsx
+│   │   │   └── ThemeContext.jsx
+│   │   │
+│   │   ├── hooks/              # Custom React hooks
+│   │   │   ├── useAuth.js
+│   │   │   └── useSearch.js
+│   │   │
+│   │   ├── services/           # API services
+│   │   │   ├── api.js
+│   │   │   ├── authService.js
+│   │   │   └── articleService.js
+│   │   │
+│   │   ├── utils/              # Utility functions
+│   │   │   ├── validators.js
+│   │   │   └── helpers.js
+│   │   │
+│   │   ├── App.jsx             # Main App component
+│   │   ├── index.jsx           # Entry point
+│   │   └── routes.jsx          # Routing configuration
+│   │
+│   ├── package.json
+│   └── .env.local              # Frontend environment variables
+│
+├── backend/                    # Server-side application
+│   ├── src/
+│   │   ├── config/             # Configuration files
+│   │   │   ├── database.js
+│   │   │   ├── auth.js
+│   │   │   └── server.js
+│   │   │
+│   │   ├── models/             # Database models
+│   │   │   ├── User.js
+│   │   │   ├── Article.js
+│   │   │   ├── Topic.js
+│   │   │   ├── Comment.js
+│   │   │   └── Bookmark.js
+│   │   │
+│   │   ├── controllers/        # Request handlers
+│   │   │   ├── authController.js
+│   │   │   ├── articleController.js
+│   │   │   ├── topicController.js
+│   │   │   └── userController.js
+│   │   │
+│   │   ├── routes/             # API routes
+│   │   │   ├── authRoutes.js
+│   │   │   ├── articleRoutes.js
+│   │   │   ├── topicRoutes.js
+│   │   │   └── userRoutes.js
+│   │   │
+│   │   ├── middleware/         # Custom middleware
+│   │   │   ├── authMiddleware.js
+│   │   │   ├── validationMiddleware.js
+│   │   │   └── errorMiddleware.js
+│   │   │
+│   │   ├── services/           # Business logic
+│   │   │   ├── emailService.js
+│   │   │   ├── searchService.js
+│   │   │   └── analyticsService.js
+│   │   │
+│   │   ├── utils/              # Utilities
+│   │   │   ├── validators.js
+│   │   │   ├── helpers.js
+│   │   │   └── constants.js
+│   │   │
+│   │   └── index.js            # Server entry point
+│   │
+│   ├── package.json
+│   ├── .env                    # Backend environment variables
+│   └── Dockerfile
+│
+├── database/                   # Database related files
+│   ├── migrations/             # Database migrations
+│   ├── seeds/                  # Seed data
+│   └── schemas/                # Database schemas
+│
+├── admin-panel/                # Content management panel
+│   ├── src/
+│   └── package.json
+│
+├── docs/                       # Documentation
+│   ├── API.md
+│   ├── SETUP.md
+│   └── ARCHITECTURE.md
+│
+├── docker-compose.yml          # Container orchestration
+├── .gitignore
+├── README.md
+└── package.json                # Root package.json for monorepo
